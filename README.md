@@ -1,68 +1,110 @@
+# 📊 Netflix Viewer Pattern Analytics
 
-# 📺 Netflix Viewer Pattern Analytics
+A data analytics project that uncovers trends and patterns in Netflix’s content library using **Exploratory Data Analysis (EDA)** and visualization techniques.
 
-A data analytics project that uncovers trends, insights, and visualizations from Netflix's catalog data using Python, Pandas, and Seaborn. This project is designed to showcase EDA (Exploratory Data Analysis) skills, data visualization, and storytelling through data.
+This project highlights how Netflix structures its content to align with modern viewing behavior.
 
 ---
 
 ## 🔍 Project Overview
 
-This project explores the Netflix titles dataset to analyze:
+This project analyzes the Netflix dataset to explore:
 
-- Growth of content over time
-- Trends in TV shows vs movies
-- Duration patterns and season counts
-- Popular genres and their distribution
-- Country-wise and type-wise breakdowns
+- Growth of content over time 📈  
+- Distribution of Movies vs TV Shows 🎬📺  
+- Movie duration trends  
+- TV show season patterns  
+- Genre and country-wise distribution 🌍  
 
-The goal is to extract meaningful patterns in how Netflix adds and categorizes its content, which may reflect viewer behavior or company strategy.
+The goal is to extract **data-driven insights** into Netflix’s content strategy.
 
 ---
 
-## 🧰 Tools & Libraries
+## 🛠️ Tech Stack
 
-- **Python 3.9+**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Jupyter Notebook**
+- Python 🐍  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
 ---
 
 ## 📦 Dataset
 
-- **Source**: [Netflix Movies and TV Shows Dataset on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
-- **Size**: ~6,000+ entries
-- **Fields**: Title, Type, Genre, Country, Date Added, Duration, Cast, Rating, etc.
+- Source: Netflix Movies & TV Shows Dataset (Kaggle)  
+- Size: ~6,000+ entries  
+- Features include: Title, Type, Genre, Country, Duration, Rating, Date Added  
+
+---
+
+## 📊 Key Visualizations
+
+### 🎬 Movie Duration Distribution
+![Movie Duration](images/movie_duration.png)
+
+---
+
+### 📺 TV Show Season Distribution
+![TV Show Seasons](images/tvshow_seasons.png)
 
 ---
 
 ## 📊 Key Insights
 
-- 📈 Netflix has been adding more **TV Shows** over recent years.
-- 🌍 The **United States** leads in content production, followed by India and the UK.
-- 🕒 Most movies have a runtime between **80–120 minutes**.
-- 📺 Most TV shows have **1–3 seasons**, with few going beyond.
-- 🎭 Popular genres include **Dramas**, **Comedies**, and **Documentaries**.
+### 🎬 Movie Duration
+- Most movies fall within **90–100 minutes**
+- Distribution is **right-skewed**, with very few long-duration movies
+- Suggests preference for **standardized, binge-friendly content**
+
+---
+
+### 📺 TV Show Seasons
+- Majority of shows have **1–2 seasons**
+- Very few exceed **5 seasons**
+- Indicates focus on **limited series format**
+
+---
+
+### 🌍 Content Distribution
+- The **United States** leads in content production  
+- Followed by **India** and the **UK**  
+- Reflects Netflix’s global expansion strategy  
+
+---
+
+### 🎭 Genre Trends
+- Popular genres include:
+  - Dramas  
+  - Comedies  
+  - Documentaries  
+- Indicates strong preference for **mainstream, high-engagement content**
+
+---
+
+### 📌 Overall Conclusion
+Netflix prioritizes **short, binge-worthy content**, with:
+- Movies under ~2 hours  
+- TV shows with limited seasons  
+
+This aligns with modern viewer behavior and platform engagement strategies.
 
 ---
 
 ## 📁 Project Structure
 
-netflix-analytics/
+netflix-eda/
 │
-├── data/
+├── Data/
 │ └── netflix_titles.csv
 │
-├── notebooks/
+├── Notebooks/
 │ └── Netflix_EDA.ipynb
 │
 ├── images/
-│ └── (charts saved as .png)
+│ └── (plots)
 │
 ├── README.md
 └── requirements.txt
-=======
-# netflix-analytics
 
